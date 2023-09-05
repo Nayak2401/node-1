@@ -1,0 +1,2 @@
+echo "display the number of users"
+sudo cat /etc/passwd
