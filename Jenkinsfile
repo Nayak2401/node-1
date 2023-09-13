@@ -9,17 +9,10 @@ pipeline {
                 }
             }
         }
-        stage('Create Text File') {
-            steps {
-                script {
-                    echo 'my life'
-                }
-            }
-        }
         stage('checkin') {
             steps {
                 script {
-                 sh 'cat hello11.sh'
+                 sh 'maven.sh'
                 }
             }
         }
