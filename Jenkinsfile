@@ -1,5 +1,5 @@
 pipeline {
-    agent ubuntu-slave-1
+    agent 'ubuntu-slave-1'
 
     stages {
         stage('scm') {
