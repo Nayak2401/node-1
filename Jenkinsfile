@@ -1,5 +1,5 @@
 pipeline {
-    agent 'ubuntu-slave-1'
+    agent "ubuntu-slave-1"
 
     stages {
         stage('scm') {
@@ -9,7 +9,6 @@ pipeline {
                 }
             }
         }
-    stages {
         stage('Install Maven') {
             steps {
                 // Use the 'sh' step to run shell commands on the slave
@@ -36,8 +35,6 @@ pipeline {
                 }
             }
         }
-    }
-    
     post {
         success {
             // Print Maven version to verify installation
