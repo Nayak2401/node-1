@@ -1,0 +1,44 @@
+kdir TEST
+  150  cd TEST/
+  151  ls- la
+  152  git clone git@github.com:Nayak2401/jar-artifactory.git
+  153  ls l-a
+  154  ls -al
+  155  cd jar-artifactory/
+  156  ls -la
+  157  git status
+  158  cp ~/Documents/demo-task/target/eurekaServer.jar ./
+  159  ls -la
+  160  git status
+  161  git add eurekaServer.jar
+  162  git status
+  163  git commit -m "adding eureka servies jar"
+  164  git push
+  165  ls -al
+  166  mkdir eureka-service-files
+  167  mv ./eurekaServer.jar eureka-service-files/
+  168  ls -al
+  169  tree
+  170  git add *
+  171  git status
+  172  git commit "changed structure"
+  173  git commit -m "changed structure"
+  174  git push
+  175  clear
+
+
+
+…or create a new repository on the command line
+echo "# codes" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+
+
+
+or push an existing repository from the command line
+
+git remote add origin git@github.com:Nayak2401/codes.git
+git branch -M main
+git push -u origin main
