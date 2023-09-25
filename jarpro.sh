@@ -3,8 +3,10 @@
 ## clone repo
 
 rm -rf Sweet-home
+
+git clone https://github.com/vinod0111/Sweet-home.git
  
-sudo chmod 777 Sweet-home
+echo "Nayak@1234" | sudo -S chmod 777 Sweet-home
 
 cd Sweet-home/eurekaserver
 
