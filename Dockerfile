@@ -8,10 +8,10 @@ LABEL maintainer="nani"
 WORKDIR /Demo
 
 # Copy the shell script from the host to the container's working directory
-COPY /home/Documents/shell.sh /Demo/shell.sh
+#COPY /home/Documents/shell.sh /Demo/shell.sh
 
 # Run the shell script
-RUN /Demo/shell.sh
+#RUN /Demo/shell.sh
 
 # Update the package lists and install Python
 RUN apt-get update && apt-get install -y python
