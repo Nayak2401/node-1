@@ -14,7 +14,7 @@ WORKDIR /Demo
 #RUN /Demo/shell.sh
 
 # Update the package lists and install Python
-RUN apt-get update && apt-get install -y python
+RUN apt-get update && apt-get install -y python3
 
 # Install Vim
 RUN apt-get install -y vim
