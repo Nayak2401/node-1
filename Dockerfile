@@ -1,5 +1,5 @@
 # Use Ubuntu 22.04 as the base image
-FROM ubuntu:22.04
+FROM python:3.11.9-slim
 
 # Set the maintainer information
 LABEL maintainer="nani"
@@ -14,6 +14,6 @@ COPY shell.py .
 #RUN /Demo/shell.sh
 
 # Update the package lists and install Python
-RUN apt-get update && apt-get install -y python3 && apt-get install -y vim
+#RUN apt-get install -y vim
 
-CMD ["python3" "shell.py"]
+CMD ["python", "/Demo/shell.py"]
