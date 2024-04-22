@@ -20,6 +20,11 @@ stages:
       vmImage: ubuntu-latest
     steps:
     - task: Docker@2
+      inputs:
+        containerRegistry: 'NayakRegistry'
+        repository: 'monday'
+        command: 'login'
+    - task: Docker@2
       displayName: Build an image and push
       inputs:
         command: 'buildAndPush'
